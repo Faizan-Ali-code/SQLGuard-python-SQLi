@@ -1,0 +1,24 @@
+{
+  "language": "python",
+  "description": "Rules to detect potential SQL Injection risks in Python code",
+  "rules": [
+    {
+      "id": "PY-SQL-001",
+      "name": "SQL query built using string concatenation",
+      "severity": "HIGH",
+      "description": "Detects SQL queries constructed by concatenating strings, which may allow SQL injection.",
+      "patterns": [
+        "SELECT",
+        "INSERT",
+        "UPDATE",
+        "DELETE"
+      ],
+      "unsafe_indicators": [
+        "+",
+        "f\"",
+        ".format("
+      ],
+      "recommendation": "Use parameterized queries or prepared statements."
+    }
+  ]
+}
