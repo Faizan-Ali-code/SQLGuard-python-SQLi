@@ -1,5 +1,5 @@
 
-```md
+
 # 🔐 SQLGuard
 **A Static SQL Injection Detection Tool**
 
@@ -174,4 +174,4 @@ Developed as a cybersecurity tooling and application security research initiativ
 
 SQLGuard is designed to promote **secure coding awareness** and **early vulnerability detection**, helping developers and learners identify risky SQL patterns before they reach production.
 
-```
+
